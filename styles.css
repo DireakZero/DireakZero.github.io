@@ -1,63 +1,78 @@
-/* กำหนดฟอนต์สำหรับทั้งหน้า */
+/* สไตล์พื้นฐานสำหรับ body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
-/* ตกแต่งหัวข้อหลัก */
-h1 {
+/* สไตล์ header */
+header {
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
-    color: #4CAF50;
-    font-size: 36px;
-    padding-top: 20px;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* ตกแต่งหัวข้อย่อย */
-h2 {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 10px;
+/* สไตล์สำหรับ navigation bar */
+nav {
+    margin-top: 10px;
 }
 
-/* ตกแต่งลิสต์อาหาร */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: #fff;
-    margin: 8px 0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* ตกแต่งลิงก์ */
-a {
-    color: #007BFF;
+nav a {
+    color: white;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
+/* เมื่อ hover บนลิงก์ */
+nav a:hover {
+    background-color: white;
+    color: #4CAF50;
 }
 
-/* ตกแต่งส่วนท้าย (footer) */
-footer {
+/* สไตล์สำหรับ container */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
-/* ปรับระยะห่างของเนื้อหาภายในแต่ละส่วน */
-section {
-    margin: 20px;
+/* สไตล์สำหรับรูปภาพ */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* สไตล์สำหรับหัวข้อ h2 */
+h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* สไตล์สำหรับข้อความใน p */
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* การปรับแต่งให้เหมาะสมกับขนาดหน้าจอมือถือ */
+@media (max-width: 768px) {
+    nav a {
+        padding: 0.5rem 1.5rem;
+    }
 }
