@@ -3,31 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เว็บไซต์ของฉัน</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>รีวิวจังหวัดอ่างทอง</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #4CAF50;
+        }
+        /* เพิ่มการจัดการ responsive design สำหรับมือถือ */
+        @media (max-width: 768px) {
+            nav a {
+                padding: 0.5rem 1.5rem;
+            }
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        /* ปรับปรุงให้มีความสวยงามมากขึ้น */
+        h2 {
+            color: #4CAF50;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
+        <h1>รีวิวจังหวัดอ่างทอง</h1>
+        <nav>
+            <a href="index.html">หน้าหลัก</a>
+            <a href="attractions.html">สถานที่ท่องเที่ยว</a>
+            <a href="traditions.html">ประเพณี</a>
+            <a href="food.html">อาหาร</a>
+            <a href="accommodation.html">ที่พัก</a>
+            <a href="member.html">สมาชิกผู้จัดทำ</a>
+        </nav>
     </header>
-
-    <section>
-        <h2>ข้อมูลเกี่ยวกับตัวเอง</h2>
-        <p>อาหาร 3 อย่างที่ชอบ</p>
-        <ul>
-            <li>ข้าวผัด</li>
-            <li>ส้มตำ</li>
-            <li>ขนมจีนน้ำยา</li>
-        </ul>
-
-        <p>ลิงก์ที่น่าสนใจ</p>
-        <ul>
-            <li><a href="https://sci.rmutsb.ac.th">เว็บไซต์มหาวิทยาลัย</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>สร้างโดย: DireakZero</p>
-    </footer>
+    <div class="container">
+        <h2>ยินดีต้อนรับสู่จังหวัดอ่างทอง</h2>
+        <p>อ่างทอง ต้องลองไปกันดูบอกเลยว่า วันเดียวก็เที่ยวได้ เพราะที่นี่มีทั้ง วัดสวยๆ พิพิธภัณฑ์ ตลาดโบราณ ให้ได้แพลนเที่ยวกันใกล้ๆ กรุงเทพฯ</p>
+        <p>อ่างทอง จังหวัดที่เต็มไปด้วยวัดที่สวยงาม และโบราณสถานต่างๆ แม้จะไม่ได้เป็นเมืองหลวงในอดีตเหมือนอยุธยา แต่ที่นี่ก็เป็นเมืองที่สำคัญมากๆ</p>
+    </div>
 </body>
 </html>
